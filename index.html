@@ -1,1 +1,40 @@
 
+<html>
+  <head>
+    <title>Test_YW</title>
+    <meta name="" content="">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+
+    <script src="https://rawgit.com/takahirox/aframe-rain/master/build/aframe-rain.min.js"></script>
+
+
+</head>
+    <body>
+        <a-scene rain>
+
+
+
+
+          <a-entity bottom environment="preset:japan;active:true;seed:14;skyType:gradient;skyColor:#5eabff;horizonColor:#adbada;lightPosition:NaN NaN -0.2;fog:0.6;ground:canyon;groundYScale:15;groundTexture:walkernoise;
+          groundColor:#192e51;groundColor2:#261010;dressing:torii;dressingAmount:4;dressingColor:#bc5e7c;dressingScale:15;dressingVariance:NaN NaN 1;grid:spots;gridColor:#e4b676" position="-20.986 -4.822041526026904 3.365" rotation="0 90 0">
+            <a-entity class="bottomenvironment" position="0 50 0" light="type:ambient;color:#aed4ff;intensity:0.2;groundColor:#315db5"></a-entity>
+            <a-entity rotation="-90 0 0" class="environmentGround bottomenvironment" scale="1 1 25" shadow="cast:false;receive:false"></a-entity>
+
+        
+
+
+
+
+
+
+
+          <a-entity camera="active:true" wasd-controls="" position="0 1.6 0" rotation="0 68.1 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="">
+            <a-entity cursor="fuse: true; fuseTimeout: 500"
+                      position="0 0 -1"
+                      geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                      material="color: black; shader: flat"></a-entity>
+
+        </a-scene>
+    </body>
+</html>
