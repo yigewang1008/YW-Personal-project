@@ -50,30 +50,38 @@
           <a-sky color="#6EBAA7"></a-sky>
 
 
-        <a-entity  position="0 -2.108 0" rotation="90 0 0" id="ring1"
+        <a-entity  position="0 -2.108 0" rotation="92 0 0" id="ring1"
         geometry="primitive:torus;radius:8.34;radiusTubular:0.17;segmentsRadial:34;segmentsTubular:33"
         material="emissive:#ff7d86;color:#95e9ff;repeat:1.12 1;displacementScale:0.26;emissiveIntensity:0.12;normalScale:0 0;roughness:0.54;height:256.88;vertexColors:face"
         sound="autoplay:false; src: url(https://ucarecdn.com/94a58e04-f041-49a5-b9b8-5b874f12a0a4/); volume:0.4; repeat:4; on: click">
-        <a-animation begin="click" attribute="material.color" from="#pink" to="#95e9ff" dur="5000" direction="normal" ></a-animation>
+        <a-animation begin="click" attribute="material.color" from="#ffbfe6" to="#95e9ff" dur="5000" direction="normal" ></a-animation>
+        <a-animation attribute="rotation" from="92 0 0" to="92 360 0" dur="50000" direction="normal" ></a-animation>
+
       </a-entity>
 
-        <a-entity position="0 1.3220429413697725 0" rotation="90 0 0" id="ring2"
+        <a-entity position="0 1.3220429413697725 0" rotation="92 0 0" id="ring2"
          geometry="primitive:torus;radius:10.29;radiusTubular:0.17;segmentsRadial:34;segmentsTubular:33"
          material="emissive:#ff7d86;color:#6a92ff;repeat:1.12 1;displacementScale:0.26;emissiveIntensity:0.12;normalScale:0 0;roughness:0.54;height:256.88;vertexColors:face"
          sound="autoplay:false; src: url(https://ucarecdn.com/cf0c7a8b-5ef5-4fb2-82ae-29de95fb51b5/); volume:0.4; on: click">
          <a-animation begin="click" attribute="material.color" from="#ffdd00" to="#6a92ff" dur="5000" direction="normal"></a-animation>
+         <a-animation attribute="rotation" from="92 0 0" to="93 -360 0" dur="50000" direction="normal" ></a-animation>
+
        </a-entity>
 
-        <a-entity position="0 5.05 0" rotation="90 0 0" id="ring3" geometry="primitive:torus;radius:8.34;radiusTubular:0.17;segmentsRadial:34;segmentsTubular:33"
+        <a-entity position="0 5.05 0" rotation="91 0 0" id="ring3" geometry="primitive:torus;radius:8.34;radiusTubular:0.17;segmentsRadial:34;segmentsTubular:33"
         material="emissive:#ca6eff;color:#b376ff;repeat:1.12 1;displacementScale:0.26;emissiveIntensity:0.12;normalScale:0 0;roughness:0.54;height:256.88;vertexColors:face"
         sound="autoplay:false; src: url(https://ucarecdn.com/b9cc4682-aa01-4120-be2e-934dba95d115/); volume:0.4; on: click">
         <a-animation begin="click" attribute="material.color" from="#27c400" to="#b376ff" dur="5000" direction="normal"></a-animation>
+        <a-animation attribute="rotation" from="88 0 0" to="92 360 0" dur="50000" direction="normal" ></a-animation>
+
       </a-entity>
 
-        <a-entity position="0 7.68 0" rotation="90 0 0" id="ring4" geometry="primitive:torus;radius:5.74;radiusTubular:0.17;segmentsRadial:34;segmentsTubular:33"
+        <a-entity position="0 7.68 0" rotation="92 0 0" id="ring4" geometry="primitive:torus;radius:5.74;radiusTubular:0.17;segmentsRadial:34;segmentsTubular:33"
         material="emissive:#ff7d86;color:#ff99c0;repeat:1.12 1;displacementScale:0.26;emissiveIntensity:0.12;normalScale:0 0;roughness:0.54;height:256.88;vertexColors:face"
         sound="autoplay:false; src: url(); volume:0.4; on: click">
         <a-animation begin="click" attribute="material.color" from="#00ffc7" to="#ff99c0" dur="5000" direction="normal"></a-animation>
+        <a-animation attribute="rotation" from="89 0 0" to="94 -360 0" dur="50000" direction="normal" ></a-animation>
+
       </a-entity>
 
         <!-- geometry level1 -->
@@ -86,7 +94,10 @@
                          to="360 360 360"
                          repeat="indefinite"
                          direction="alternate"
-                         ></a-animation></a-entity>
+                         ></a-animation>
+          <a-animation begin="click" attribute="material.color" from="#27c400" to="#b376ff" dur="5000" direction="normal"></a-animation>
+          <a-animation attribute="rotation" from="88 0 0" to="92 360 0" dur="50000" direction="normal" ></a-animation>
+        </a-entity>
 
 
 
@@ -97,7 +108,10 @@
                         to="254 -240 360"
                         repeat="indefinite"
                         direction="alternate"
-                        ></a-animation></a-entity>
+                        ></a-animation>
+        <a-animation begin="click" attribute="material.color" from="#27c400" to="#b376ff" dur="5000" direction="normal"></a-animation>
+        <a-animation attribute="rotation" from="88 0 0" to="92 360 0" dur="50000" direction="normal" ></a-animation>
+      </a-entity>
 
 
       <a-entity position="-9.6 -1 0.7" id="geometry-3" material="#ff982e;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:octahedron;radius:0.6">
@@ -107,7 +121,11 @@
                        to="254 -240 360"
                        repeat="indefinite"
                        direction="alternate"
-                       ></a-animation></a-entity>
+                       ></a-animation>
+         <a-animation begin="click" attribute="material.color" from="#27c400" to="#b376ff" dur="5000" direction="normal"></a-animation>
+         <a-animation attribute="rotation" from="88 0 0" to="92 360 0" dur="50000" direction="normal" ></a-animation>
+       </a-entity>
+
 
      <a-entity position="-6 -1 6.7" id="geometry-4" material="color:blue;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:octahedron;radius:0.6">
        <a-animation attribute="rotation"
