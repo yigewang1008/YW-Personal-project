@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Test_YW</title>
+    <meta name="" content="">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+    <script src="https://rawgit.com/takahirox/aframe-rain/master/build/aframe-rain.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.1.1/dist/aframe-physics-system.min.js"></script>
+
+</head>
+    <body>
+        <a-scene rain physics="debug: true" fog="0.5">
+
+          <a-assets>
+
+              <a-asset-item id="diamond-obj" src="https://raw.githubusercontent.com/yigewang1008/YW-Personal-project/master/assets/Diamond/Diamond.obj"></a-asset-item>
+              <a-asset-item id="diamond-mtl" src="https://raw.githubusercontent.com/yigewang1008/YW-Personal-project/master/assets/Diamond/Diamond.mtl"></a-asset-item>
+
+
+          </a-assets>
+
+
+
+
+          <a-entity environment="preset:japan;active:true;seed:14;
+          skyType:gradient;skyColor:#5eabff;horizonColor:#adbada;
+          fog:0.5;ground:canyon;groundYScale:15;groundTexture:walkernoise;
+          groundColor:#192e51;groundColor2:#261010;dressing:torii;dressingAmount:10;dressingColor:#bc5e7c;dressingScale:15;dressingVariance:NaN NaN 1;
+          grid:spots;gridColor:red"
+          position="0 0 3.365"
+          rotation="0 90 0"
+          scale="0.4 0.4 0.4"
+          light="type:ambient;color:#aed4ff;intensity:0.2;groundColor:#315db5"
+          ></a-entity>
+
+
+          <a-sky color="#6EBAA7"></a-sky>
+
+
+          <a-entity id="diamond" obj-model="obj: #diamond-obj; mtl: #diamond-mtl"></a-entity>
+
+
+          <a-entity camera="active:true" wasd-controls="" position="0 1.5 0" rotation="0 0 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="">
+            <a-entity cursor="fuse: true; fuseTimeout: 500"
+                      position="0 0 -3"
+                      geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                      material="color: white; shader: flat"></a-entity>
+
+        </a-scene>
+    </body>
+</html>
