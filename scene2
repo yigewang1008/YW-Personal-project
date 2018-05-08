@@ -10,7 +10,7 @@
 
   </head>
   <body>
-    <a-scene fog="density:0 ;color:#00e1e3;">
+    <a-scene >
 
       <a-assets>
 
@@ -20,44 +20,126 @@
       </a-assets>
 
 
-      <!-- <a-entity environment="preset:japan;dressing:apparatus;dressingAmount:0;skyColor:#7e5db5;horizonColor:#b4adda;
-active:true;seed:14;skyType:gradient;lightPosition:1.33 1 0.24;fog:0.9;groundYScale:25;groundTexture:walkernoise;
-groundColor:#7e5db5;groundColor2:#cabdf5;dressingColor:#bc5e7c;dressingScale:15;dressingVariance:0 0 0;grid:spots;gridColor:#e4b676"
-position="0 -3 0" rotation="0 1.571 0" scale="0.4 0.4 0.4"
-light="type:ambient;color:#aed4ff;intensity:0.2;groundColor:#315db5">
-<a-entity class="environment" position="0 50 0" light="type:hemisphere;color:#beaeda;intensity:0.6;groundColor:#7e5db5"></a-entity>
-<a-entity class="environment" position="1.33 1 0.24" light="intensity:0.6;shadowCameraLeft:-10;shadowCameraBottom:-10;shadowCameraRight:10;shadowCameraTop:10"></a-entity>
-<a-entity rotation="-90 0 0" class="environmentGround environment" scale="1 1 25" shadow="cast:false;receive:false"></a-entity>
-<a-entity class="environmentDressing environment"></a-entity>
-<a-sky radius="200" geometry="" theta-length="110" class="environment"
-material="shader:gradientshader;topColor:#7e5db5;bottomColor:#b4adda"></a-sky></a-entity> -->
-
-
-      <!-- <a-gltf-model src="#fantasysky" scale="4 4 4"></a-gltf-model> -->
       <a-entity id="cone" geometry="primitive:cone" rotation="0 0 180" position="0 -0.296 0" material="color:#7193d1;metalness:0.54;roughness:0.48"></a-entity>
 
 
-      <a-entity id="toplight" position="0 4 0" light="angle:0;decay:-4.58;intensity:0.3;type:point;color:#eaeaea;" ></a-entity>
+<a-entity id="toplight" position="0 19.938 0" light="angle:0;decay:-4.58;intensity:0.3;type:point;color:#eaeaea"></a-entity>
 
       <a-entity id="environmentpreset"
                 environment="preset:japan;
                              skyColor:#00c4ff;horizonColor:#30448b;ground:hills;
                              groundTexture:walkernoise;groundColor:#090e5c;groundColor2:#000000;
-                             dressingAmount:0;fog:0.97;
+                             dressingAmount:0;fog:0;
                              grid:dots;gridColor:#00ffdb">
-       
+
       </a-entity>
 
 
-      <a-entity position="0 10.005 -7.3301019619462435" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+<a-entity id="1" position="15.224688211926853 8.01 14.435839448451528" geometry="height:16.03;depth:2;width:2" material="color:#5d1597;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-      <a-entity position="10 7 -2" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+<a-entity id="2" position="10 8.29 -2" geometry="height:16.590000000000003;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
 
-      <a-entity position="-13 10 -2" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+<a-entity id="3" position="-13 10 -2" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
 
-      <a-entity position="-13 10 8" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+<a-entity id="4" position="-13 10 8" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
 
-      <a-entity position="-8 10 8" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+<a-entity id="5" position="-8 10 11.836855280211257" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+
+<a-entity id="6" position="4.360757992021899 10 3.2490436073144586" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+
+<a-entity id="7" position="-4.159970472408455 10 2.563" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+
+<a-entity id="8" position="6.414130248734687 9.065487070349247 11.837" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="9" position="5.69532145945658 8.94 22.042463772980717" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="10" position="6.414 9.065 -11.152" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="11" position="-4.964437339856424 9.065 -11.152" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="12" position="-16.97352797390235 9.065 -11.152" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="13" position="-9.739 9.065 4.574" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="14" position="-5.838783023047269 10 -4.675" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+
+<a-entity id="15" position="-4.159970472408455 10 2.563" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+
+<a-entity id="16" position="-21.277603866987327 8.009914738674476 2.4019138863216103" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="17" position="11.906289162968665 10 -8.11825858033937" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+
+<a-entity id="18" position="10.40470413744579 10 8" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+
+<a-entity id="19" position="1.114 8.94 7.597" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="20" position="20.411 9.065 5.039894415005319" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="21" position="20.411 9.065 5.039894415005319" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="22" position="17.12411039795898 8.01 -3.7044869043437787" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="23" position="-21.278 8.01 -5.445955820613556" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="24" position="0.876107976969628 8.01 -15.52907816274018" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="25" position="-10.671905233334666 8.01 -15.52907816274018" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="26" position="0.4698923967501565 8.01 13.416301028135752" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="27" position="-14.228916146152576 8.01 17.71644589840428" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="28" position="14.145786611770783 8.01 17.71644589840428" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="29" position="8.102 8.01 -20.66081383035454" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="30" position="-18.455773827703215 8.01 -20.661" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="31" position="-20.203898698319364 8.01 9.854920031041601" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="32" position="18.097651660250975 8.01 -14.236913056991316" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="33" position="-4.774409021162461 8.01 -20.661" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="34" position="-26.534640544041963 8.01 -11.141379033560419" geometry="height:16.03;depth:2;width:2" material="color:#5d1597;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="35" position="-21.451266489513785 8.01 18.68391927697844" geometry="height:16.03;depth:2;width:2" material="color:#5d1597;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="36" position="-0.867 8.01 18.684" geometry="height:16.03;depth:2;width:2" material="color:#5d1597;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="37" position="15.224688211926853 8.01 14.435839448451528" geometry="height:16.03;depth:2;width:2" material="color:#5d1597;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="38" position="2.4842899499182725 10 -5.377687410150198" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+
+<a-entity id="39" position="13.487 8.01 1.304" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="40" position="-4.169232436917201 6.09 23.889374337380122" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="41" position="5.69532145945658 8.94 22.042463772980717" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="42" position="-16.106933700581568 6.09 -25.604023869375087" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="43" position="25.083304440820324 6.09 11.153" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="44" position="21.709 6.09 22.062" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="45" position="3.1614647159205624 6.09 29.18737260852191" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="46" position="2.2981660424612933 6.09 -25.604023869375087" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="47" position="20.884 6.09 -25.604" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="48" position="28.634715987250722 6.09 -1.8518934854699154" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="49" position="-33.5721864421656 6.09 -1.852" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="50" position="-29.692164584709758 6.09 11.153" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="51" position="-16.388078754864576 6.09 23.889" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+<a-entity id="52" position="-16.388078754864576 6.09 23.889" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+
 
 
       <a-entity camera="active:true" wasd-controls="" position="0 1.5 0" rotation="-60 0 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="">
