@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Test_YW</title>
+    <meta name="" content="">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.1.1/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    <!-- <script src="https://rawgit.com/takahirox/aframe-rain/master/build/aframe-rain.min.js"></script> -->
+
+</head>
+    <body>
+        <a-scene fog="density:0 ;color:#00bec0; type:exponential;">
+
+          <a-assets>
+
+              <!-- <a-asset-item id="fantasysky" src="https://raw.githubusercontent.com/yigewang1008/YW-Personal-project/master/assets/fantasy_sky_background/scene.gltf"></a-asset-item> -->
+              <img id="blacktexture" src="https://ucarecdn.com/7a37f143-792a-4404-806b-9b98d78cf4bd/">
+              <!-- <audio id="test" src="url(https://ucarecdn.com/94a58e04-f041-49a5-b9b8-5b874f12a0a4/)" preload="auto"></audio> -->
+          </a-assets>
+
+          <a-entity position="0 2.25 -15" particle-system="preset: dust"></a-entity>
+
+          <!-- <a-entity environment="preset:japan;dressing:apparatus;dressingAmount:0;skyColor:#7e5db5;horizonColor:#b4adda;
+          active:true;seed:14;skyType:gradient;lightPosition:1.33 1 0.24;fog:0.9;groundYScale:25;groundTexture:walkernoise;
+          groundColor:#7e5db5;groundColor2:#cabdf5;dressingColor:#bc5e7c;dressingScale:15;dressingVariance:0 0 0;grid:spots;gridColor:#e4b676"
+          position="0 -3 0" rotation="0 1.571 0" scale="0.4 0.4 0.4"
+          light="type:ambient;color:#aed4ff;intensity:0.2;groundColor:#315db5">
+          <a-entity class="environment" position="0 50 0" light="type:hemisphere;color:#beaeda;intensity:0.6;groundColor:#7e5db5"></a-entity>
+          <a-entity class="environment" position="1.33 1 0.24" light="intensity:0.6;shadowCameraLeft:-10;shadowCameraBottom:-10;shadowCameraRight:10;shadowCameraTop:10"></a-entity>
+          <a-entity rotation="-90 0 0" class="environmentGround environment" scale="1 1 25" shadow="cast:false;receive:false"></a-entity>
+          <a-entity class="environmentDressing environment"></a-entity>
+          <a-sky radius="200" geometry="" theta-length="110" class="environment"
+          material="shader:gradientshader;topColor:#7e5db5;bottomColor:#b4adda"></a-sky></a-entity> -->
+
+
+          <!-- <a-gltf-model src="#fantasysky" scale="4 4 4"></a-gltf-model> -->
+         <a-entity id="cone" geometry="primitive:cone" rotation="0 0 180" position="0 -0.296 0" material="color:#612c9c;metalness:0.54;roughness:0.48"></a-entity>
+
+
+          <a-entity id="toplight" position="0 4 0" light="angle:0;decay:-4.58;intensity:0.3;type:point" ></a-entity>
+
+          <a-entity id="environmentpreset"
+          environment="preset:japan;
+          skyColor:#00e3ec;horizonColor:#09184d;ground:hills;
+          groundTexture:walkernoise;groundColor:#000cb7;groundColor2:#b6003c;
+          dressingAmount:0;fog:0.97;
+          grid:dots;gridColor:#00e1c1">
+          <a-entity class="environment" position="0 50 0" light="type:hemisphere;color:#df818d;intensity:0.6;groundColor:#000cb7"></a-entity>
+          <!-- <a-entity rotation="-90 0 0" class="environmentGround environment" scale="1 1 25" shadow="cast:false;receive:false"></a-entity> -->
+          <!-- <a-entity class="environmentDressing environment"></a-entity> -->
+          <a-sky radius="200" geometry="" theta-length="110" class="environment" material="shader:gradientshader;topColor:#c0041b;bottomColor:#dbc120;npot:false;side:front"></a-sky>
+        </a-entity>
+
+
+          <a-entity position="0 10.005 -7.3301019619462435" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+
+          <a-entity position="10 7 -2" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+
+          <a-entity position="-13 10 -2" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+
+          <a-entity position="-13 10 8" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+
+          <a-entity position="-8 10 8" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+
+
+          <a-entity camera="active:true" wasd-controls="" position="0 1.5 0" rotation="-60 0 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="">
+            <a-entity cursor="fuse: true; fuseTimeout: 500"
+                      position="0 0 -1"
+                      scale="0.5 0.5 0.5"
+                      geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                      material="color: white; shader: flat"></a-entity>
+
+        </a-scene>
+    </body>
+</html>
