@@ -1,0 +1,352 @@
+<html>
+  <head>
+    <title>Test_YW</title>
+    <meta name="" content="">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.1.1/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    <!-- <script src="https://rawgit.com/takahirox/aframe-rain/master/build/aframe-rain.min.js"></script> -->
+
+</head>
+    <body>
+        <a-scene  physics="debug: true" fog="0.5; color:#1b003b">
+
+          <a-assets>
+
+              <!-- <a-asset-item id="fantasysky" src="https://raw.githubusercontent.com/yigewang1008/YW-Personal-project/master/assets/fantasy_sky_background/scene.gltf"></a-asset-item> -->
+              <img id="blacktexture" src="https://ucarecdn.com/7a37f143-792a-4404-806b-9b98d78cf4bd/">
+              <!-- <audio id="test" src="url(https://ucarecdn.com/94a58e04-f041-49a5-b9b8-5b874f12a0a4/)" preload="auto"></audio> -->
+          </a-assets>
+
+          <a-entity position="0 2.25 -15" particle-system="preset: dust"></a-entity>
+
+          <!-- <a-entity environment="preset:japan;dressing:apparatus;dressingAmount:0;skyColor:#7e5db5;horizonColor:#b4adda;
+          active:true;seed:14;skyType:gradient;lightPosition:1.33 1 0.24;fog:0.9;groundYScale:25;groundTexture:walkernoise;
+          groundColor:#7e5db5;groundColor2:#cabdf5;dressingColor:#bc5e7c;dressingScale:15;dressingVariance:0 0 0;grid:spots;gridColor:#e4b676"
+          position="0 -3 0" rotation="0 1.571 0" scale="0.4 0.4 0.4"
+          light="type:ambient;color:#aed4ff;intensity:0.2;groundColor:#315db5">
+          <a-entity class="environment" position="0 50 0" light="type:hemisphere;color:#beaeda;intensity:0.6;groundColor:#7e5db5"></a-entity>
+          <a-entity class="environment" position="1.33 1 0.24" light="intensity:0.6;shadowCameraLeft:-10;shadowCameraBottom:-10;shadowCameraRight:10;shadowCameraTop:10"></a-entity>
+          <a-entity rotation="-90 0 0" class="environmentGround environment" scale="1 1 25" shadow="cast:false;receive:false"></a-entity>
+          <a-entity class="environmentDressing environment"></a-entity>
+          <a-sky radius="200" geometry="" theta-length="110" class="environment"
+          material="shader:gradientshader;topColor:#7e5db5;bottomColor:#b4adda"></a-sky></a-entity> -->
+
+
+          <!-- <a-gltf-model src="#fantasysky" scale="4 4 4"></a-gltf-model> -->
+         <a-entity id="cone" geometry="primitive:cone" rotation="0 0 180" position="0 -0.296 0" material="color:#612c9c;metalness:0.54;roughness:0.48"></a-entity>
+
+
+          <a-entity id="toplight" position="0 4 0" light="angle:0;decay:-4.58;intensity:0.3;type:point" ></a-entity>
+
+          <a-entity environment="preset:japan; dressing:apparatus; dressingAmount:0;
+          skyColor:#44469e;horizonColor:#3b2158;"
+          position="0 -3 0"
+          rotation="0 90 0"
+          scale="0.4 0.4 0.4"
+          light="type:ambient;color:#aed4ff;intensity:0.2;groundColor:#315db5">
+          </a-entity>
+          <a-sky color="#6EBAA7"></a-sky>
+
+
+        <a-entity  position="0 -2.108 0" rotation="92 0 0" id="ring1"
+        geometry="primitive:torus;radius:8.34;radiusTubular:0.17;segmentsRadial:34;segmentsTubular:33"
+        material="emissive:#ff7d86;color:#95e9ff;repeat:1.12 1;displacementScale:0.26;emissiveIntensity:0.12;normalScale:0 0;roughness:0.54;height:256.88;vertexColors:face"
+        sound="autoplay:false; src: url(https://ucarecdn.com/94a58e04-f041-49a5-b9b8-5b874f12a0a4/); volume:0.4; repeat:4; on: click">
+        <a-animation begin="click" attribute="material.color" from="#ffbfe6" to="#95e9ff" dur="5000" direction="normal" ></a-animation>
+        <a-animation attribute="rotation" from="92 0 0" to="92 360 0" dur="50000" direction="normal" ></a-animation>
+
+      </a-entity>
+
+        <a-entity position="0 1.3220429413697725 0" rotation="92 0 0" id="ring2"
+         geometry="primitive:torus;radius:10.29;radiusTubular:0.17;segmentsRadial:34;segmentsTubular:33"
+         material="emissive:#ff7d86;color:#6a92ff;repeat:1.12 1;displacementScale:0.26;emissiveIntensity:0.12;normalScale:0 0;roughness:0.54;height:256.88;vertexColors:face"
+         sound="autoplay:false; src: url(https://ucarecdn.com/cf0c7a8b-5ef5-4fb2-82ae-29de95fb51b5/); volume:0.4; on: click">
+         <a-animation begin="click" attribute="material.color" from="#ffdd00" to="#6a92ff" dur="5000" direction="normal"></a-animation>
+         <a-animation attribute="rotation" from="92 0 0" to="93 -360 0" dur="50000" direction="normal" ></a-animation>
+
+       </a-entity>
+
+        <a-entity position="0 5.05 0" rotation="91 0 0" id="ring3" geometry="primitive:torus;radius:8.34;radiusTubular:0.17;segmentsRadial:34;segmentsTubular:33"
+        material="emissive:#ca6eff;color:#b376ff;repeat:1.12 1;displacementScale:0.26;emissiveIntensity:0.12;normalScale:0 0;roughness:0.54;height:256.88;vertexColors:face"
+        sound="autoplay:false; src: url(https://ucarecdn.com/b9cc4682-aa01-4120-be2e-934dba95d115/); volume:0.4; on: click">
+        <a-animation begin="click" attribute="material.color" from="#27c400" to="#b376ff" dur="5000" direction="normal"></a-animation>
+        <a-animation attribute="rotation" from="88 0 0" to="92 360 0" dur="50000" direction="normal" ></a-animation>
+
+      </a-entity>
+
+        <a-entity position="0 7.68 0" rotation="92 0 0" id="ring4" geometry="primitive:torus;radius:5.74;radiusTubular:0.17;segmentsRadial:34;segmentsTubular:33"
+        material="emissive:#ff7d86;color:#ff99c0;repeat:1.12 1;displacementScale:0.26;emissiveIntensity:0.12;normalScale:0 0;roughness:0.54;height:256.88;vertexColors:face"
+        sound="autoplay:false; src: url(); volume:0.4; on: click">
+        <a-animation begin="click" attribute="material.color" from="#00ffc7" to="#ff99c0" dur="5000" direction="normal"></a-animation>
+        <a-animation attribute="rotation" from="89 0 0" to="94 -360 0" dur="50000" direction="normal" ></a-animation>
+
+      </a-entity>
+
+        <!-- geometry level1 -->
+
+        <a-entity id="level1" position="0 0 0" scale="0.9 0.9 0.9" rotation="0 164 0">
+        <a-entity position="0 -1 -9" id="geometry" material="color:#ff982e;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:octahedron;radius:0.84">
+          <a-animation attribute="rotation"
+                         dur="10000"
+                         fill="forwards"
+                         to="360 360 360"
+                         repeat="indefinite"
+                         direction="alternate"
+                         ></a-animation>
+          <a-animation begin="click" attribute="material.color" from="#27c400" to="#b376ff" dur="5000" direction="normal"></a-animation>
+          <a-animation attribute="rotation" from="88 0 0" to="92 360 0" dur="50000" direction="normal" ></a-animation>
+        </a-entity>
+
+
+
+       <a-entity position="8 -1 3" id="geometry-2" material="color:#dcd835;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:octahedron;radius:0.6">
+         <a-animation attribute="rotation"
+                        dur="15000"
+                        fill="forwards"
+                        to="254 -240 360"
+                        repeat="indefinite"
+                        direction="alternate"
+                        ></a-animation>
+        <a-animation begin="click" attribute="material.color" from="#27c400" to="#b376ff" dur="5000" direction="normal"></a-animation>
+        <a-animation attribute="rotation" from="88 0 0" to="92 360 0" dur="50000" direction="normal" ></a-animation>
+      </a-entity>
+
+
+      <a-entity position="-9.6 -1 0.7" id="geometry-3" material="#ff982e;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:octahedron;radius:0.6">
+        <a-animation attribute="rotation"
+                       dur="8000"
+                       fill="forwards"
+                       to="254 -240 360"
+                       repeat="indefinite"
+                       direction="alternate"
+                       ></a-animation>
+         <a-animation begin="click" attribute="material.color" from="#27c400" to="#b376ff" dur="5000" direction="normal"></a-animation>
+         <a-animation attribute="rotation" from="88 0 0" to="92 360 0" dur="50000" direction="normal" ></a-animation>
+       </a-entity>
+
+
+     <a-entity position="-6 -1 6.7" id="geometry-4" material="color:blue;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:octahedron;radius:0.6">
+       <a-animation attribute="rotation"
+                      dur="6000"
+                      fill="forwards"
+                      to="254 -240 360"
+                      repeat="indefinite"
+                      direction="alternate"
+                      ></a-animation></a-entity>
+
+
+    <a-entity position="2 -1 9" id="geometry-5" material="color:green;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:tetrahedron;radius:1">
+      <a-animation attribute="rotation"
+                     dur="10000"
+                     fill="forwards"
+                     to="-254 -240 360"
+                     repeat="indefinite"
+                     direction="alternate"
+                     ></a-animation></a-entity>
+
+   <a-entity position="-7.2 -1 -6" id="geometry-6" material="color:#185d00;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:tetrahedron;radius:1">
+     <a-animation attribute="rotation"
+                    dur="10000"
+                    fill="forwards"
+                    to="-254 -240 360"
+                    repeat="indefinite"
+                    direction="alternate"
+                    ></a-animation></a-entity>
+
+  <a-entity position="7 -1 -6" id="geometry-7" material="color:purple;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:tetrahedron;radius:1">
+    <a-animation attribute="rotation"
+                   dur="10000"
+                   fill="forwards"
+                   to="-254 -240 360"
+                   repeat="indefinite"
+                   direction="alternate"
+                   ></a-animation></a-entity>
+
+
+     <a-animation attribute="rotation"
+                  dur="50000"
+                  fill="forwards"
+                  to="0 -360 0"
+                  repeat="indefinite"
+                  direction="forwards"
+                  easing="linear"
+                ></a-animation>
+       </a-entity>
+
+        <!-- geometry level2 -->
+
+        <a-entity id="level2">
+        <a-entity position="0 3 -9" id="geometry" material="color:#4b5aea;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:octahedron;radius:0.84">
+          <a-animation attribute="rotation"
+                         dur="10000"
+                         fill="forwards"
+                         to="360 360 360"
+                         repeat="indefinite"
+                         direction="alternate"
+                         ></a-animation></a-entity>
+
+
+
+       <a-entity position="8 3 3" id="geometry-2" material="color:#6b29bc;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:octahedron;radius:0.6">
+         <a-animation attribute="rotation"
+                        dur="15000"
+                        fill="forwards"
+                        to="254 -240 360"
+                        repeat="indefinite"
+                        direction="alternate"
+                        ></a-animation></a-entity>
+
+
+      <a-entity position="-7.33 3 -6.37" id="geometry-3" material="color:#f9aaf8;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:octahedron;radius:0.6">
+        <a-animation attribute="rotation"
+                       dur="8000"
+                       fill="forwards"
+                       to="254 -240 360"
+                       repeat="indefinite"
+                       direction="alternate"
+                       ></a-animation></a-entity>
+
+     <a-entity position="-6.25 3 6" id="geometry-4" material="color:#a9edf9;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:octahedron;radius:0.6">
+       <a-animation attribute="rotation"
+                      dur="6000"
+                      fill="forwards"
+                      to="254 -240 360"
+                      repeat="indefinite"
+                      direction="alternate"
+                      ></a-animation></a-entity>
+
+
+    <a-entity position="-8 3 0.8" id="geometry-5" material="color:#09117c;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:sphere;radius:0.5">
+      <a-animation attribute="rotation"
+                     dur="10000"
+                     fill="forwards"
+                     to="-254 -240 360"
+                     repeat="indefinite"
+                     direction="alternate"
+                     ></a-animation></a-entity>
+
+   <a-entity position="2 3 9" id="geometry-6" material="color:#5a3e9b;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:tetrahedron;radius:1">
+     <a-animation attribute="rotation"
+                    dur="10000"
+                    fill="forwards"
+                    to="-254 -240 360"
+                    repeat="indefinite"
+                    direction="alternate"
+                    ></a-animation></a-entity>
+
+  <a-entity position="7 3 -6" id="geometry-7" material="color:#8cd3ff;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:tetrahedron;radius:1">
+    <a-animation attribute="rotation"
+                   dur="10000"
+                   fill="forwards"
+                   to="-254 -240 360"
+                   repeat="indefinite"
+                   direction="alternate"
+                   ></a-animation></a-entity>
+
+
+     <a-animation attribute="rotation"
+                  dur="50000"
+                  fill="forwards"
+                  to="0 360 0"
+                  repeat="indefinite"
+                  direction="forwards"
+                  easing="linear"
+                ></a-animation>
+       </a-entity>
+
+
+
+
+       <!-- geometry level3 -->
+
+       <a-entity id="level3" scale="0.8 0.8 0.8" rotation="0 -200 0">
+       <a-entity position="0 7.5 -9" id="geometry" material="color:#ff6159;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:octahedron;radius:0.84">
+         <a-animation attribute="rotation"
+                        dur="10000"
+                        fill="forwards"
+                        to="360 360 360"
+                        repeat="indefinite"
+                        direction="alternate"
+                        ></a-animation></a-entity>
+
+
+
+      <a-entity position="8 7.5 3" id="geometry-2" material="color:#e89de5;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:octahedron;radius:0.6">
+        <a-animation attribute="rotation"
+                       dur="15000"
+                       fill="forwards"
+                       to="254 -240 360"
+                       repeat="indefinite"
+                       direction="alternate"
+                       ></a-animation></a-entity>
+
+
+     <a-entity position="-6.2 7.5 -6" id="geometry-3" material="color:#f2c963;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:octahedron;radius:0.6">
+       <a-animation attribute="rotation"
+                      dur="8000"
+                      fill="forwards"
+                      to="254 -240 360"
+                      repeat="indefinite"
+                      direction="alternate"
+                      ></a-animation></a-entity>
+
+    <a-entity position="-6.25 7.5 6" id="geometry-4" material="color:#700b2e;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:octahedron;radius:0.6">
+      <a-animation attribute="rotation"
+                     dur="6000"
+                     fill="forwards"
+                     to="254 -240 360"
+                     repeat="indefinite"
+                     direction="alternate"
+                     ></a-animation></a-entity>
+
+
+   <a-entity position="-9 7.5 -.7" id="geometry-5" material="color:#e8afff;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:tetrahedron;radius:1">
+     <a-animation attribute="rotation"
+                    dur="10000"
+                    fill="forwards"
+                    to="-254 -240 360"
+                    repeat="indefinite"
+                    direction="alternate"
+                    ></a-animation></a-entity>
+
+  <a-entity position="2 7.5 9" id="geometry-6" material="color:#b5683b;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:tetrahedron;radius:1">
+    <a-animation attribute="rotation"
+                   dur="10000"
+                   fill="forwards"
+                   to="-254 -240 360"
+                   repeat="indefinite"
+                   direction="alternate"
+                   ></a-animation></a-entity>
+
+ <a-entity position="7 7.5 -6" id="geometry-7" material="color:#ea4bad;emissive:#0c5c2c;emissiveIntensity:0.27" geometry="primitive:tetrahedron;radius:1">
+   <a-animation attribute="rotation"
+                  dur="10000"
+                  fill="forwards"
+                  to="-254 -240 360"
+                  repeat="indefinite"
+                  direction="alternate"
+                  ></a-animation></a-entity>
+
+
+    <a-animation attribute="rotation"
+                 dur="50000"
+                 fill="forwards"
+                 to="0 -500 0"
+                 repeat="indefinite"
+                 direction="forwards"
+                 easing="linear"
+               ></a-animation>
+      </a-entity>
+
+          <a-entity camera="active:true" wasd-controls="" position="0 1.5 0" rotation="-60 0 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="">
+            <a-entity cursor="fuse: true; fuseTimeout: 500"
+                      position="0 0 -1"
+                      scale="0.5 0.5 0.5"
+                      geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                      material="color: white; shader: flat"></a-entity>
+
+        </a-scene>
+    </body>
+</html>
