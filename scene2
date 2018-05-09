@@ -1,145 +1,228 @@
 <html>
   <head>
-    <title>Test_YW</title>
+    <title>Dreamland scene 2</title>
     <meta name="" content="">
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
     <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
     <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.1.1/dist/aframe-physics-system.min.js"></script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
-    <!-- <script src="https://rawgit.com/takahirox/aframe-rain/master/build/aframe-rain.min.js"></script> -->
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
 
   </head>
   <body>
-    <a-scene >
-
+    <a-scene fog="density: 0.09; color: #031f4c; type: exponential">
       <a-assets>
 
-        <!-- <a-asset-item id="fantasysky" src="https://raw.githubusercontent.com/yigewang1008/YW-Personal-project/master/assets/fantasy_sky_background/scene.gltf"></a-asset-item> -->
-        <img id="blacktexture" src="https://ucarecdn.com/7a37f143-792a-4404-806b-9b98d78cf4bd/">
-        <!-- <audio id="test" src="url(https://ucarecdn.com/94a58e04-f041-49a5-b9b8-5b874f12a0a4/)" preload="auto"></audio> -->
+        <!-- <audio id="AA" src="https://ucarecdn.com/3ace5e94-b57e-4cdf-9a7d-206ba028e79c/" preload="auto"></audio>
+<audio id="BB" src="https://ucarecdn.com/d68948f9-2259-46ab-8518-71e23a89bdc0/" preload="auto"></audio>
+<audio id="CC" src="https://ucarecdn.com/3e528ae0-8dad-4791-a747-59d1c321869f/" preload="auto"></audio>
+<audio id="DD" src="https://ucarecdn.com/5b40b37f-58be-4f92-a0bf-f6d111b5e367/" preload="auto"></audio>
+<audio id="EE" src="https://ucarecdn.com/8c750252-18e3-4305-8c77-3710a2594287/" preload="auto"></audio>
+
+<audio id="FF" src="https://ucarecdn.com/d504f242-93c1-46f8-ae3e-a5bfd3f26128/" preload="auto"></audio>
+<audio id="GG" src="https://ucarecdn.com/75449caa-307b-4dab-97bf-2114c0c22cfb/" preload="auto"></audio>
+<audio id="HH" src="https://ucarecdn.com/73a3dcdd-f202-47a2-b30b-584eb7ede15e/" preload="auto"></audio>
+<audio id="II" src="https://ucarecdn.com/be4e5c1e-29f3-4c86-8c80-2dee3183af77/" preload="auto"></audio>
+<audio id="JJ" src="https://ucarecdn.com/a3047dbf-bb29-4ae9-80cc-e8df28ff8d96/" preload="auto"></audio>
+<audio id="KK" src="https://ucarecdn.com/68dd9bfd-fe37-45d9-9c7f-a9fe31f6f422/" preload="auto"></audio>
+<audio id="LL" src="https://ucarecdn.com/d22cf007-871b-435e-821a-1b2919a87d31/" preload="auto"></audio>
+<audio id="MM" src="https://ucarecdn.com/b5ca6815-061e-4a36-a330-d03889a38a58/" preload="auto"></audio> -->
+
       </a-assets>
 
 
       <a-entity id="cone" geometry="primitive:cone" rotation="0 0 180" position="0 -0.296 0" material="color:#7193d1;metalness:0.54;roughness:0.48"></a-entity>
 
 
-<a-entity id="toplight" position="0 19.938 0" light="angle:0;decay:-4.58;intensity:0.3;type:point;color:#eaeaea"></a-entity>
+      <a-entity id="toplight" position="0 19.938 0" light="angle:0;decay:-4.58;intensity:0.3;type:point;color:#eaeaea"></a-entity>
 
       <a-entity id="environmentpreset"
                 environment="preset:japan;
                              skyColor:#00c4ff;horizonColor:#30448b;ground:hills;
                              groundTexture:walkernoise;groundColor:#090e5c;groundColor2:#000000;
-                             dressingAmount:0;fog:0;
+                             dressingAmount:0;
                              grid:dots;gridColor:#00ffdb">
-
       </a-entity>
 
 
-<a-entity id="1" position="15.224688211926853 8.01 14.435839448451528" geometry="height:16.03;depth:2;width:2" material="color:#5d1597;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="2" position="10 8.29 -2" geometry="height:16.590000000000003;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+      <a-entity id="1" position="15.224688211926853 8.01 14.435839448451528" geometry="height:16.03;depth:2;width:2" material="color:#5d1597;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="3" position="-13 10 -2" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+      <a-entity id="2" position="10 8.29 -2" geometry="height:16.590000000000003;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
 
-<a-entity id="4" position="-13 10 8" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+      <a-entity id="3" position="-13 10 -2" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
 
-<a-entity id="5" position="-8 10 11.836855280211257" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+      <a-entity id="4" position="-13 10 8" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
 
-<a-entity id="6" position="4.360757992021899 10 3.2490436073144586" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+      <a-entity id="5" position="-8 10 11.836855280211257" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
 
-<a-entity id="7" position="-4.159970472408455 10 2.563" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+      <a-entity id="6" position="4.360757992021899 10 3.2490436073144586" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
 
-<a-entity id="8" position="6.414130248734687 9.065487070349247 11.837" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="7" position="-4.159970472408455 10 2.563" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
 
-<a-entity id="9" position="5.69532145945658 8.94 22.042463772980717" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="8" position="6.414130248734687 9.065487070349247 11.837" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="10" position="6.414 9.065 -11.152" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="9" position="5.69532145945658 8.94 22.042463772980717" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="11" position="-4.964437339856424 9.065 -11.152" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="10" position="6.414 9.065 -11.152" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="12" position="-16.97352797390235 9.065 -11.152" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="11" position="-4.964437339856424 9.065 -11.152" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="13" position="-9.739 9.065 4.574" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="12" position="-16.97352797390235 9.065 -11.152" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="14" position="-5.838783023047269 10 -4.675" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+      <a-entity id="13" position="-9.739 9.065 4.574" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="15" position="-4.159970472408455 10 2.563" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+      <a-entity id="14" position="-5.838783023047269 10 -4.675" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
 
-<a-entity id="16" position="-21.277603866987327 8.009914738674476 2.4019138863216103" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="15" position="-4.159970472408455 10 2.563" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
 
-<a-entity id="17" position="11.906289162968665 10 -8.11825858033937" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+      <a-entity id="16" position="-21.277603866987327 8.009914738674476 2.4019138863216103" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="18" position="10.40470413744579 10 8" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+      <a-entity id="17" position="11.906289162968665 10 -8.11825858033937" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
 
-<a-entity id="19" position="1.114 8.94 7.597" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="18" position="10.40470413744579 10 8" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
 
-<a-entity id="20" position="20.411 9.065 5.039894415005319" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="19" position="1.114 8.94 7.597" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="21" position="20.411 9.065 5.039894415005319" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="20" position="20.411 9.065 5.039894415005319" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="22" position="17.12411039795898 8.01 -3.7044869043437787" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="21" position="20.411 9.065 5.039894415005319" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="23" position="-21.278 8.01 -5.445955820613556" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="22" position="17.12411039795898 8.01 -3.7044869043437787" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="24" position="0.876107976969628 8.01 -15.52907816274018" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="23" position="-21.278 8.01 -5.445955820613556" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="25" position="-10.671905233334666 8.01 -15.52907816274018" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="24" position="0.876107976969628 8.01 -15.52907816274018" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="26" position="0.4698923967501565 8.01 13.416301028135752" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="25" position="-10.671905233334666 8.01 -15.52907816274018" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="27" position="-14.228916146152576 8.01 17.71644589840428" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="26" position="0.4698923967501565 8.01 13.416301028135752" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="28" position="14.145786611770783 8.01 17.71644589840428" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="27" position="-14.228916146152576 8.01 17.71644589840428" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="29" position="8.102 8.01 -20.66081383035454" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="28" position="14.145786611770783 8.01 17.71644589840428" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="30" position="-18.455773827703215 8.01 -20.661" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="29" position="8.102 8.01 -20.66081383035454" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="31" position="-20.203898698319364 8.01 9.854920031041601" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="30" position="-18.455773827703215 8.01 -20.661" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="32" position="18.097651660250975 8.01 -14.236913056991316" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="31" position="-20.203898698319364 8.01 9.854920031041601" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="33" position="-4.774409021162461 8.01 -20.661" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="32" position="18.097651660250975 8.01 -14.236913056991316" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="34" position="-26.534640544041963 8.01 -11.141379033560419" geometry="height:16.03;depth:2;width:2" material="color:#5d1597;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="33" position="-4.774409021162461 8.01 -20.661" geometry="height:16.03;depth:2;width:2" material="color:#972197;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="35" position="-21.451266489513785 8.01 18.68391927697844" geometry="height:16.03;depth:2;width:2" material="color:#5d1597;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="34" position="-26.534640544041963 8.01 -11.141379033560419" geometry="height:16.03;depth:2;width:2" material="color:#5d1597;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="36" position="-0.867 8.01 18.684" geometry="height:16.03;depth:2;width:2" material="color:#5d1597;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="35" position="-21.451266489513785 8.01 18.68391927697844" geometry="height:16.03;depth:2;width:2" material="color:#5d1597;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="37" position="15.224688211926853 8.01 14.435839448451528" geometry="height:16.03;depth:2;width:2" material="color:#5d1597;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="36" position="-0.867 8.01 18.684" geometry="height:16.03;depth:2;width:2" material="color:#5d1597;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="38" position="2.4842899499182725 10 -5.377687410150198" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
+      <a-entity id="37" position="15.224688211926853 8.01 14.435839448451528" geometry="height:16.03;depth:2;width:2" material="color:#5d1597;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="39" position="13.487 8.01 1.304" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="38" position="2.4842899499182725 10 -5.377687410150198" geometry="height:20.01;depth:2;width:2" material="color:#ff0059;emissiveIntensity:0"></a-entity>
 
-<a-entity id="40" position="-4.169232436917201 6.09 23.889374337380122" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="39" position="13.487 8.01 1.304" geometry="height:16.03;depth:2;width:2" material="color:#c10400;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="41" position="5.69532145945658 8.94 22.042463772980717" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="40" position="-4.169232436917201 6.09 23.889374337380122" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="42" position="-16.106933700581568 6.09 -25.604023869375087" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="41" position="5.69532145945658 8.94 22.042463772980717" geometry="height:18.62;depth:2;width:2" material="color:#ff003d;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="43" position="25.083304440820324 6.09 11.153" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="42" position="-16.106933700581568 6.09 -25.604023869375087" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="44" position="21.709 6.09 22.062" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="43" position="25.083304440820324 6.09 11.153" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="45" position="3.1614647159205624 6.09 29.18737260852191" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="44" position="21.709 6.09 22.062" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="46" position="2.2981660424612933 6.09 -25.604023869375087" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="45" position="3.1614647159205624 6.09 29.18737260852191" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="47" position="20.884 6.09 -25.604" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="46" position="2.2981660424612933 6.09 -25.604023869375087" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="48" position="28.634715987250722 6.09 -1.8518934854699154" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="47" position="20.884 6.09 -25.604" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="49" position="-33.5721864421656 6.09 -1.852" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="48" position="28.634715987250722 6.09 -1.8518934854699154" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="50" position="-29.692164584709758 6.09 11.153" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="49" position="-33.5721864421656 6.09 -1.852" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="51" position="-16.388078754864576 6.09 23.889" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="50" position="-29.692164584709758 6.09 11.153" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
-<a-entity id="52" position="-16.388078754864576 6.09 23.889" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+      <a-entity id="51" position="-16.388078754864576 6.09 23.889" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
+
+      <a-entity id="52" position="-16.388078754864576 6.09 23.889" geometry="height:12.8;depth:2;width:2" material="color:#4f67ae;emissiveIntensity:0" scale="0.8 1 0.8"></a-entity>
 
 
+
+
+
+
+      <!-- music objects  -->
+
+      <a-entity id="A" position="-10.202 3.321 0"  geometry="primitive:octahedron;radius:0.5900000000000001" material="color:red"
+                sound="autoplay:false; src: url(https://ucarecdn.com/b4b9e452-3647-47e2-aae6-3eb24c330513/); volume:1; on: click">
+        <a-animation begin="click" attribute="material.color" from="red" to="yellow" dur="5000" direction="normal" ></a-animation>
+      </a-entity>
+
+      <a-entity id="B" position="6.702062981487595 3.321 -6.903534160935737"  geometry="primitive:octahedron;radius:0.59" material="color:red"
+                sound="autoplay:false; src: url(https://ucarecdn.com/561ebb68-f397-4a3e-9bed-1498aaa08730/); volume:1; on: click">
+        <a-animation begin="click" attribute="material.color" from="red" to="yellow" dur="5000" direction="normal" ></a-animation>
+      </a-entity>
+
+      <a-entity id="C" position="6.702062981487595 3.321 8.242269219307897" geometry="primitive:octahedron;radius:0.59" material="color:red"
+                sound="autoplay:false; src: url(https://ucarecdn.com/9397fa53-2671-4af3-8a12-7987a75afb47/); volume:1; on: click">
+        <a-animation begin="click" attribute="material.color" from="red" to="yellow" dur="5000" direction="normal" ></a-animation>
+      </a-entity>
+
+      <a-entity id="D" position="6.702062981487595 3.321 -17.09827952779781" geometry="primitive:octahedron;radius:0.59" material="color:red"
+                sound="autoplay:false; src: url(https://ucarecdn.com/85914fef-e170-421d-928a-1b3a045783e2/); volume:1; on: click">
+        <a-animation begin="click" attribute="material.color" from="#ffbfe6" to="#95e9ff" dur="5000" direction="normal" ></a-animation>
+      </a-entity>
+
+      <a-entity id="E" position="-6.973727840063356 3.321 -17.09827952779781" geometry="primitive:octahedron;radius:0.59" material="color:#fff3e7"
+                sound="autoplay:false; src: url(https://ucarecdn.com/aaa83f4a-824e-4ebc-b0ad-94076f53b3c3/); volume:1; on: click">
+        <a-animation begin="click" attribute="material.color" from="#ffbfe6" to="#95e9ff" dur="5000" direction="normal" ></a-animation>
+      </a-entity>
+
+      <a-entity id="F" position="-6.973727840063356 3.321 18.45415962375274" geometry="primitive:octahedron;radius:0.59" material="color:#fdff66"
+                sound="autoplay:false; src: url(https://ucarecdn.com/a5123bcc-8112-4f81-8fb6-6473cb941f6a/); volume:1; on: click">
+        <a-animation begin="click" attribute="material.color" from="#ffbfe6" to="#95e9ff" dur="5000" direction="normal" ></a-animation>
+      </a-entity>
+
+      <a-entity id="G" position="10.919477288486176 3.321 18.45415962375274" geometry="primitive:octahedron;radius:0.59" material="color:#fdff66"
+                sound="autoplay:false; src: url(https://ucarecdn.com/83950762-b180-4f8b-b374-085fe9c7728c/); volume:1; on: click">
+        <a-animation begin="click" attribute="material.color" from="#ffbfe6" to="#95e9ff" dur="5000" direction="normal" ></a-animation>
+      </a-entity>
+
+      <a-entity id="H" position="-16.377 3.321 11.551709450364505" geometry="primitive:octahedron;radius:0.5900000000000001" material="color:#fff3e7"
+                sound="autoplay:false; src: url(https://ucarecdn.com/9a723b50-8fe4-4b98-998e-6384a463a78d/); volume:1; on: click">
+        <a-animation begin="click" attribute="material.color" from="#ffbfe6" to="#95e9ff" dur="5000" direction="normal" ></a-animation>
+      </a-entity>
+
+      <a-entity id="I" position="-9.798 3.321 -3.757" geometry="primitive:octahedron;radius:0.59" material="color:#fdff66"
+                sound="autoplay:false; src: url(https://ucarecdn.com/4fdd58a7-cb3b-47a9-84d5-caccde0eb2e8/); volume:1; on: click">
+        <a-animation begin="click" attribute="material.color" from="#ffbfe6" to="#95e9ff" dur="5000" direction="normal" ></a-animation>
+      </a-entity>
+
+      <a-entity id="J" position="-9.798 3.321 -3.757" geometry="primitive:octahedron;radius:0.59" material="color:#fff3e7"
+                sound="autoplay:false; src: url(https://ucarecdn.com/a0a24382-8ce4-4a82-b10e-3e53bb9e86bb/); volume:1; on: click">
+        <a-animation begin="click" attribute="material.color" from="#ffbfe6" to="#95e9ff" dur="5000" direction="normal" ></a-animation>
+      </a-entity>
+
+      <a-entity id="K" position="24.889 3.321 -10.413510055294099" geometry="primitive:octahedron;radius:0.59" material="color:#fdff66"
+                sound="autoplay:false; src: url(https://ucarecdn.com/c4e62b45-0d5d-4e23-ab72-99d8d94c8e60/); volume:1; on: click">
+        <a-animation begin="click" attribute="material.color" from="#ffbfe6" to="#95e9ff" dur="5000" direction="normal" ></a-animation>
+      </a-entity>
+
+      <a-entity id="L" position="24.889 3.321 -10.413510055294099" geometry="primitive:octahedron;radius:0.59" material="color:#fff3e7"
+                sound="autoplay:false; src: url(https://ucarecdn.com/a9ce59c6-3d9e-4455-bd8d-9b02360a2441/); volume:1; on: click">
+        <a-animation begin="click" attribute="material.color" from="#ffbfe6" to="#95e9ff" dur="5000" direction="normal" ></a-animation>
+      </a-entity>
+
+      <a-entity id="M" position="0.30659951775854344 3.321 -10.700712112906052" geometry="primitive:octahedron;radius:0.59" material="color:#fff3e7"
+                sound="autoplay:false; src: url(https://ucarecdn.com/b1f02c01-5baf-4abe-aecf-27a63b817046/); volume:1; on: click">
+        <a-animation begin="click" attribute="material.color" from="#ffbfe6" to="#95e9ff" dur="5000" direction="normal" ></a-animation>
+      </a-entity>
 
 
       <a-entity camera="active:true" wasd-controls="" position="0 1.5 0" rotation="-60 0 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="">
@@ -149,6 +232,6 @@
                   geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
                   material="color: white; shader: flat"></a-entity></a-entity>
 
-        </a-scene>
-      </body>
-    </html>
+    </a-scene>
+  </body>
+</html>
